@@ -1,0 +1,93 @@
+<ion-view view-title="Notification" hide-back-button="true">
+
+    <ion-nav-buttons side="right">
+    </ion-nav-buttons>
+
+    <ion-content>
+
+        <ion-refresher on-refresh="doRefresh()">
+
+        </ion-refresher>
+
+        <ion-item  collection-repeat="message in messages | orderBy : predicate:reverse">
+            <div class="item card-item">
+                <div class="card stable-bg ink ink-dark">
+                    <div class="item item-avatar item-text-wrap">
+                        <span class="avatar" style="background-image: url('img/sansa.jpg');"></span>
+                        <strong>{{message.city}}</strong><br> <i class="icon ion-alert"></i> Peer Request
+                        <strong>{{message.text}} </strong>
+
+
+                        <div class="item tabs tabs-secondary tabs-icon-right">
+                            <div class="pull-right">
+                                <i class="icon ion-clock"></i> just now
+                            </div>
+                            <a class="tab-item stable-bg assertive">
+                                <a class="icon icon-color ion-ios-checkmark-outline" ui-sref="app.timer" ></a>
+
+                            </a>
+
+                            <a class="tab-item stable-bg positive-900">
+                                <i class="icon icon-color ion-close-circled"></i></span>
+                            </a>
+                            <br/>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </ion-item>
+
+
+    </ion-content>
+
+    <!--<ion-footer-bar keyboard-attach class="bar-stable item-input-inset header-bar-height:200px">-->
+        <!--<label class="item-input-wrapper">-->
+        <!--<input type="text" placeholder="Type your message" on-return="send(); closeKeyboard()"-->
+        <!--ng-model="data.message" on-focus="inputUp()" on-blur="inputDown()"/>-->
+        <!--</label>-->
+        <!--<button class="button button-small  button-assertive-900" ng-click="send()">-->
+        <!--Send-->
+        <!--</button>-->
+
+
+        <!--<label class="item item-input item-select">-->
+            <!--<div class="input-label">-->
+                <!--Request type:-->
+            <!--</div>-->
+            <!--<select>-->
+                <!--<option selected>Chore</option>-->
+                <!--<option>Commodity</option>-->
+                <!--<option>Tocoins</option>-->
+            <!--</select>-->
+        <!--</label>-->
+
+        <!--<div class="list">-->
+            <!--<div class="item item-input-inset">-->
+                <!--<label class="item-input-wrapper ir">-->
+
+                    <!--<input type="text" placeholder="Request description." ng-model="data.message">-->
+                    <!--<i ui-sref="" class="icon icon-right ion-android-camera icon-color  rr "></i>-->
+                <!--</label>-->
+
+                <!--<a class="button icon-right ion-chevron-right icon-color" ng-click="sendChore()">Send</a>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</ion-footer-bar>-->
+
+</ion-view>
+
+<!--<ion-view title="Todo" ng-init="list()" hide-back-button="true">
+    <ion-nav-buttons side="right">
+        <button class="right button button-icon icon ion-plus" ng-click="create()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <div ng-repeat="todo in data.chores" class="item">
+                {{todo.title}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>-->

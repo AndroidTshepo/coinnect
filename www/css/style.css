@@ -1,0 +1,432 @@
+/* General
+==================================*/
+
+
+h1 {
+    color: white;
+    text-shadow: 0 1px 0px #000;
+    font-size: 42px;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+/* Utilities
+==================================*/
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.scroll {
+    height: 100%;
+}
+
+
+/* Menu
+==================================*/
+.menu .bar.bar-header.expanded {
+    transition: all .5s ease-in-out;
+}
+
+.menu-open .bar.bar-header.expanded {
+    background-color: #222;
+}
+
+.menu h2 {
+    bottom: 0;
+    font-size: 18px;
+    left: 16px;
+    position: absolute;
+}
+
+.menu .avatar {
+    height: 88px;
+    width: 88px;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+
+}
+
+
+/* Login
+==================================*/
+.app-icon {
+    background-color: #fff;
+    background: url('../img/coinnect.png') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 190px;
+    margin: 0 auto;
+    width: 130px;
+}
+
+.mar{
+    margin-top: 10px;
+}
+
+
+.social-login {
+    position: fixed;
+    bottom: 0;
+}
+
+.iconss{
+    align-content: center;
+}
+
+.nav_f{
+    border:1px solid red;
+    background-color: #B71C1C;
+    height: 50px;
+}
+
+.home-container {
+    display: -webkit-flex;
+    flex-direction: column;
+    height: 100%;
+}
+.home-container > .row {
+flex: 1%;
+}
+
+.header {
+
+    align-items: center;
+    /*background-image: url("/img/redc.jpg");*/
+    background-color: #B71C1C;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20%;
+
+
+}
+
+.icon-row {
+    align-items: center;
+    height: 20%;
+}
+
+
+
+/* Buttons
+==================================*/
+.ibutton{
+    width: 90%;
+    height: 60px;
+    background-color:#B71C1C;
+    background-repeat: no-repeat;
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+
+}
+
+.hbutton {
+    width: 5%;
+    text-align: center;
+    background-image: url("/img/Home2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    padding-top: 10%;
+    background-color: #B71C1C;
+}
+.Bbutton{
+    background-image: url("/img/Back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
+
+.textTrans{
+    width: 95%;
+    color: #B71C1C;
+    background-color: inherit;
+}
+
+.t{
+    text-align: center;
+
+}
+.col{
+    margin-top: -5px;
+}
+.r{
+   margin-top: 60px;
+}
+
+.textC{
+    color: white;
+    font: bold;
+    font-size:small;
+}
+
+
+
+
+
+
+.item-input
+{
+    font-family: "Helvetica Neue", "Roboto", sans-serif;
+    font: 900;
+}
+
+.progress-wrapper{
+    position: relative;
+    margin:20px auto;
+    font-size: 21px;
+}
+.progress{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 9em;
+    font-size:1em;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+/* Tables
+==================================*/
+tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.first-child {
+     padding-top: .5em;
+ }
+
+
+.before {
+     content: attr(data-th)": ";
+ font-weight: bold;
+ width: 6.5em;
+ display: inline-block;
+
+}
+
+
+th, td {
+    text-align: center;
+    width: 1000px;
+}
+
+.first-child {
+     padding-left: 0;
+ }
+
+.last-child {
+     padding-right: 0;
+ }
+
+
+ion-footer-bar{
+    background-color: red;
+    color: red;
+}
+
+
+
+h1 {
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: white;
+}
+
+
+.rwd-table {
+    background: darkred;
+    color:white;
+    border-radius: .4em;
+    overflow: scroll;
+    overflow-x : scroll;
+    overflow-y: scroll;
+
+}
+
+tr {
+    border-color: #34495E;
+}
+
+th, td {
+    margin: .5em 1em;
+}
+
+
+th, td:before {
+    border-right-width:medium;
+    border-right-color:#000;
+    border-right-style:groove;
+    color: #dd5;
+    border: 1px;
+}
+.icon_center{
+    align:center;
+    margin-left: 30%;
+}
+
+.icon-color{
+    color: #B71C1C;
+}
+
+.lg_b{
+
+    color:#B71C1C;
+
+}
+
+
+
+/*popup*/
+.popup-buttons .button{
+
+
+   background-color: darkred;
+
+    font-size: 20px;
+
+}
+
+
+
+
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+    line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+    display: block !important;
+}
+.rr{
+    margin-left: 22%;
+    height: 10px;
+}
+.ir{
+    height:50px;
+}
+.ion-item{
+    font-family: 'trebuchet MS', 'Lucida Grande', arial;
+    font-size:14px;
+    color: #444;
+    font-weight: bold;
+}
+
+.ionic_toast {
+    color: #B71C1C;
+    cursor: default;
+    font-size: 1em;
+    display: none;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 10px 25px;
+    margin: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9999;
+    background-color: #b71c1c;
+}
+
+.ionic_toast_error {
+    background-color: rgba(239, 53, 24, 0.80);
+    color: #B71C1C;
+}
+
+.ionic_toast_warning {
+    background-color: rgba(221, 98, 11, 0.80);
+    color: #B71C1C;
+}
+
+.ionic_toast_info {
+    background-color: #B71C1C;
+    /*background-color: rgba(255, 214, 10, 0.80);*/
+    color: #B71C1C;
+}
+
+.ionic_toast_success {
+    background-color:  #B71C1C;
+    color: #B71C1C;
+}
+
+.ionic_toast_top {
+    top: 10px;
+}
+
+.ionic_toast_middle {
+    background-color: #B71C1C;
+    top: 40%;
+}
+
+.ionic_toast_bottom {
+    bottom: 10px;
+}
+
+.ionic_toast_close {
+    background-color: #B71C1C;
+    border-radius: 2px;
+    color: #CCCCCC;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+.toast_close_icon {
+    position: relative;
+    top: 1px;
+}
+
+.ionic_toast_sticky .ionic_toast_close {
+    display: block;
+}
+
+.ionic_toast_close:active {
+    background-color: #B71C1C;
+}
+

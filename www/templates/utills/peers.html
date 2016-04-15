@@ -1,0 +1,30 @@
+<ion-view view-title="Peers" hide-back-button="true">
+
+    <div class="bar bar-subheader bar-stable item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon "></i>
+            <input type="search" placeholder="Search" ng-change="srcchchange()" ng-model="adn.item">
+        </label>
+    </div>
+
+    <ion-pane>
+        <ion-content>
+
+            <div style="padding-top: 50px">
+                <ion-list ng-repeat="item in items | filter : adn.item" >
+                    <a class="item item-avatar item-icon-right" ng-click="popUp(item)">
+                        <img src="img/noprofile.gif">
+
+                        <h2>{{item}}</h2>
+                        <i class="icon ion-android-arrow-dropdown icon-color ng-enter"></i>
+
+                    </a>
+                    <hr>
+                </ion-list>
+
+
+            </div>
+
+        </ion-content>
+    </ion-pane>
+</ion-view>

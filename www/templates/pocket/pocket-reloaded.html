@@ -1,0 +1,62 @@
+
+<ion-view view-title="Pocket" hide-back-button="true">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="hero slide-up" style="background-image: url(img/coin2.jpg);">
+            <div class="content">
+                <!--<div class="avatar" style="background-image: url('img/runx.jpg');"></div>-->
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="animate-fade-in">
+            <div class="tabs tabs-clear tabs-icon-top static">
+                <a ui-sref="app.Blockchain" class="tab-item">
+                    <div class="icon-color"><i class="icon ion-briefcase"></i> Blockchain</div>
+                </a>
+                <a ui-sref="app.Transactions" class="tab-item">
+                    <div class="icon-color"> <i class="icon ion-ios-loop-strong"></i> Transactions </div>
+                </a>
+                <a ui-sref="app.pocket-reloaded" class="tab-item">
+                    <div class="icon-color"><i class="icon ion-card" ng-click="showAlert()"></i> Balance</div>
+                </a>
+
+            </div><hr>
+        </div>
+
+
+
+        <div class="item animate-fade-slide-in-right" >
+            <button ui-sref="app.transfer" class="button  button-full button-assertive-900 ink">Transfer Tocoins</button><br>
+            </div>
+        <div class="item animate-fade-slide-in-right">
+            <button ui-sref="app.age" class="button button-full button-assertive-900 ink" >Age Tocoins</button><br>
+        </div>
+
+        <div class="item animate-fade-slide-in-right">
+            <button ui-sref="app.buy" class="button button-full button-assertive-900 ink">Buy Tocoins</button><br>
+        </div>
+
+        </div>
+    </ion-content>
+
+    <script id="modal.html" type="text/ng-template">
+        <div class="modal">
+            <header class="bar bar-header bar-positive">
+                <h1 class="title">I'm A Modal</h1>
+                <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+            </header>
+            <content has-header="true" padding="true">
+                <p>This is a modal</p>
+            </content>
+        </div>
+    </script>
+
+
+
+
+
+
+
+

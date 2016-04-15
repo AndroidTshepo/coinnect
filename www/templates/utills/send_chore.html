@@ -1,0 +1,34 @@
+
+<ion-view>
+<ion-content ng-class="{expanded:$scope.isExpanded}">
+
+    <div class ="item item-avatar item-icon-right">
+        <img src = "img/cute.jpg">
+        <h2>Malia Obama</h2>
+        <p style = "color: #B71C1C "> Lives in California </p>
+        <i class = "icon icon-right ion-close-circled icon-color" ng-click="closeModal()"></i>
+    </div>
+    <label class="item item-input item-select">
+        <div class="input-label">
+            Request type:
+        </div>
+        <select>
+            <option selected>Chore</option>
+            <option >Commodity</option>
+            <option >Tocoins</option>
+        </select>
+    </label>
+    <div class="list">
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper ir">
+
+                <input type="text" placeholder="Request description."  ng-model="data.message" >
+                <i ui-sref="" class="icon icon-right ion-android-camera icon-color  rr "></i>
+            </label>
+
+            <a class="button icon-right ion-chevron-right icon-color" ng-click="send()">Send</a>
+        </div>
+    </div>
+
+</ion-content>
+</ion-view>

@@ -1,0 +1,90 @@
+
+<!--<ion-view view-title="Buy Tocoins "-->
+          <!--<ion-content ng-class="{expanded:$scope.isExpanded}">-->
+
+<!--<br><br><br>-->
+<!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
+    <!--<input type="hidden" name="cmd" value="_s-xclick">-->
+    <!--<input type="hidden" name="hosted_button_id" value="GWE7GMQB7WARJ">-->
+    <!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+    <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
+<!--</form>-->
+          <!--</ion-content>-->
+<!--</ion-view>-->
+
+<ion-view view-title="Buy Tocoins" hide-back-button="true" ">
+        <ion-content ng-class="{expanded:$scope.isExpanded}" >
+            <form ng-controller="BuyCtrl">
+                <div class="list animate-fade-slide-in-right">
+                    <label class="item item-input item-floating-label">
+                       <span class="input-label">How many Tocoins to buy?</span>
+                       <input type="number" placeholder="How many Tocoins to buy?" ng-model="howmanycc.cc">
+                    </label>
+
+
+
+                    <label class="item item-input item-floating-label  "style="background: transparent" >
+                      <span class="input-label">Insert your Card Number</span>
+                 <input type="text" placeholder="Card Number" size="16" ng-model="numbercc.cc" >
+                    </label>
+
+                    <!--<label class="item item-input item-floating-label">-->
+                        <!--<span class="input-label">Your card type?</span>-->
+                        <!--<div class="pull-right">-->
+                            <!--<i class="icon icon-color ion-ios-arrow-down"></i>-->
+                        <!--</div>-->
+                        <!--<input type="text" placeholder="What is your card type?" >-->
+
+                    <!--</label>-->
+
+
+                    <!--<label class="item item-input item-floating-label">-->
+                     <!--<span class="input-label">Expiration MM/YY</span>-->
+                     <!--<input type="date" placeholder="Expiration MM/YY">-->
+                   <!--</label>-->
+
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">CSC (3 digits)</span>
+                        <input type="number" placeholder="CSC (3 digits)">
+                   </label>
+
+               <label class="item item-input item-floating-label">
+                   <span class="input-label">Select a billing Adress</span>
+                   <input type="text" placeholder="Select a billing Adress">
+               </label>
+
+                    <div class="item animate-fade-slide-in-right">
+                        <button  class="button button-full button-assertive-900 ink " ng-click="buyTocoins()"   >
+                            Buy Tocoins
+                        </button>
+                    </div>
+
+
+
+                </div>
+                </form>
+    </ion-content>
+</ion-view>
+
+<!--<ion-view title="Firebase">-->
+    <!--<ion-content>-->
+        <!--<div>-->
+            <!--<div class="list list-inset">-->
+                <!--<label class="item item-input">-->
+                    <!--<input ng-model="username" type="text" placeholder="Username" />-->
+                <!--</label>-->
+
+                <!--<label class="item item-input">-->
+                    <!--<input ng-model="password" type="password" placeholder="Password" />-->
+                <!--</label>-->
+
+            <!--</div>-->
+            <!--<div class="padding-left padding-right">-->
+                <!--<div class="button-bar">-->
+                    <!--<a class="button" ng-click="login(username, password)">Login</a>-->
+                    <!--<a class="button" ng-click="register(username, password)">Register</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</ion-content>-->
+<!--</ion-view>-->

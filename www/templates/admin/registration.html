@@ -1,0 +1,32 @@
+<ion-modal-view view-title="Registration">
+
+    <ion-header-bar align-title="center" class="bar-assertive-900" >
+        <h2 class="title" style="color: white">Registration</h2>
+    </ion-header-bar>
+
+    <ion-content style="background: url('img/gray.jpg') center; background-size: cover;">
+
+    <ion-content>
+
+        <div class="list animate-fade-slide-in-right">
+
+        <div class="list textTrans r">
+            <div class="app-icon" style="margin-top: 16px"></div>
+            <ion-md-input ng-model = "data.name" name="username" placeholder="Name" highlight-color="black" type="text" ></ion-md-input>
+            <ion-md-input ng-model = "data.surname" placeholder="Surname" highlight-color="white" type="text" ></ion-md-input>
+            <ion-md-input ng-model = "data.email" placeholder="Email" highlight-color="white" type="text"></ion-md-input>
+            <ion-md-input placeholder="Password"  ng-model ="data.password" neme="password" highlight-color="assertive" type="password" ></ion-md-input>
+            <ion-md-input ng-model="password" placeholder="Confirm Password" highlight-color="white" type="password"></ion-md-input>
+
+        </div>
+
+        <div class="padding">
+            <button ng-click="createPerson(data)" class="button button-full button-assertive-900 ink" >Register</button>
+
+            <button ui-sref="app.login"class="button button-full button-dark ink" >Cancel</button>
+        </div>
+      </div>
+
+    </ion-content>
+</ion-content>
+</ion-modal-view>

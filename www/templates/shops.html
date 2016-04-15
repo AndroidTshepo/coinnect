@@ -1,0 +1,30 @@
+<ion-modal-view>
+    <ion-view view-title="Shops" hide-back-button="true">
+        <!-- newly addited text -->
+
+        <ion-content ng-class="{expanded:isExpanded}">
+
+            <label class="item item-input-wrapper " scroll="false">
+                <i class="icon ion-android-search placeholder-icon icon-color"></i>
+                <input type="search" placeholder="Search" ng-change="srcchchange()" ng-model="adn.item"
+                       style="position:absolute">
+            </label>
+            <a href=" #" class="item item-avatar item-icon-right" ng-click="card()">
+
+                <ion-list>
+                    <div ng-repeat="x in names" data="{{names}}" ng-click="getDatapointId(names)">
+                        <ion-item>
+                            {{x.DPNAME}}<hr>
+                        </ion-item>
+                    </div>
+                    <div ng-if="names !== undefined && !names.length" class="no-results">
+                        <ion-item>
+                            No results found..
+                        </ion-item>
+
+                    </div>
+                </ion-list>
+            </a>
+            </div>
+        </ion-content>
+    </ion-view>

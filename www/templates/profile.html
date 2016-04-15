@@ -1,0 +1,81 @@
+
+<ion-view view-title="coinnect" hide-back-button="true"class="icon ion-ios-flag">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/backgound/triangles_background.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/sansa.jpg');"></div>
+                <h3><a class="dark">{{ LoggedInUser.password.email}}</a></h3><br>
+            </div>
+        </div>
+        </div>
+        <div class="tabs tabs-clear tabs-icon-top static">
+            <a ui-sref="app.notification" class="tab-item">
+                <div class="icon-color"><i class="icon ion-android-notifications"></i> Notifications</div>
+            </a>
+            <a ui-sref="app.peers" class="tab-item">
+                <div class="icon-color"> <i class="icon ion-android-people"></i> Peers </div>
+            </a>
+            <a ui-sref="app.pocket-reloaded" class="tab-item">
+                <div class="icon-color"><i class="icon ion-android-mail"></i> pocket</div>
+            </a>
+            <a ui-sref="app.shops" class="tab-item">
+                <div class="icon-color"><i class="icon ion-ios-cart"></i> Shops</div>
+            </a>
+        </div><hr>
+<!-- Post a comment o an add-->
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="Post an Add..." ng-model="chat.message" >
+                <div class="pull-right" style="margin-right:10px;">
+                    <a class="tab-item assertive">
+                        <i class="icon  ion-ios-arrow-right icon-color " menu-toggle="right" ng-click="sendChat(chat)"></i>
+                    </a>
+                </div>
+            </label>
+        </div><hr>
+        </div>
+
+        <h4 class="content ">Shops Following:</h4>
+
+        <div ng-show="loggedInUser">Logged in as <span id="email-header">{{loggedInUser.password.email}}</span></div>
+        <div class="list animate-fade-slide-in-right">
+            <a ng-click="call_modal()"  class="item item-avatar item-icon-right">
+                <img src="img/burger-king.png">
+                <h2 >Burger King</h2>
+                <p >Get free 2 tocoins with 1Kingburger</p>
+                <i class="icon ion-ios-close-outline icon-color"></i>
+
+
+
+            </a>
+            <a ng-click="call_modal()" class="item item-avatar item-icon-right">
+                <img src="img/download_360.jpg">
+                <h2 >STER KINEKOR</h2>
+                <p >With you're 5 tocoins watch movie of your choice</p>
+                <i class="icon ion-ios-close-outline icon-color "></i>
+
+            </a>
+            <a ng-click="call_modal()" class="item item-avatar item-icon-right">
+                <img src="img/checkers-logo_360.png">
+                <h2 >Checkers</h2>
+                <p >pick up </p>
+                <i class="icon ion-ios-close-outline icon-color "></i>
+
+            </a>
+        </div>
+
+
+    </ion-content>
+</ion-view>
+
+<script id="modal.html" type="text/ng-template">
+    <div class="modal">
+        <header class="bar bar-header bar-positive">
+            <h1 class="title">I'm A Modal</h1>
+            <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+        </header>
+        <content has-header="true" padding="true">
+            <p>This is a modal</p>
+        </content>
+    </div>
+</script>
